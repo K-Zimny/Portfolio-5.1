@@ -92,6 +92,12 @@
   height: 200px;
 }
 
+.hero__hero-display__item {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
 .hero__hero-display__item:hover {
   transform: translateY(-20px);
   transition: all ease-in 0.8s;
