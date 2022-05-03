@@ -77,10 +77,6 @@
   top: 3px;
 }
 
-.hero__hero-display__item-effect:hover::after {
-  background: linear-gradient(#b90808, #1f1f1f);
-}
-
 .hero__hero-display__item-effect::after {
   position: absolute;
   content: "";
