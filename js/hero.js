@@ -21,12 +21,43 @@ $(document).ready(function () {
   const heroItem7 = document.getElementById("jsHeroItem7");
   const heroItem8 = document.getElementById("jsHeroItem8");
 
+  const heroItemEffect1 = document.getElementById("jsHeroItemEffect1");
+  //   const heroItem2 = document.getElementById("jsHeroItem2");
+  //   const heroItem3 = document.getElementById("jsHeroItem3");
+  //   const heroItem4 = document.getElementById("jsHeroItem4");
+  //   const heroItem5 = document.getElementById("jsHeroItem5");
+  //   const heroItem6 = document.getElementById("jsHeroItem6");
+  //   const heroItem7 = document.getElementById("jsHeroItem7");
+  //   const heroItem8 = document.getElementById("jsHeroItem8");
+
   //hero item color hover on btm effect
 
   //   hero item button depress and return
   //hero item 1
   heroItem1.addEventListener("mouseenter", function () {
+    $(heroItemEffect1).animate(
+      {
+        height: 300,
+      },
+      500
+    );
+
     $(heroItem1).animate(
+      {
+        bottom: 50,
+        // height: -700,
+      },
+      500
+    );
+    $([
+      heroItem2,
+      heroItem3,
+      heroItem4,
+      heroItem5,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ]).animate(
       {
         bottom: -50,
       },
@@ -35,7 +66,30 @@ $(document).ready(function () {
   });
 
   heroItem1.addEventListener("mouseleave", function () {
+    $(heroItemEffect1).animate(
+      {
+        height: 0,
+      },
+      500
+    );
+
     $(heroItem1).animate(
+      {
+        bottom: 0,
+        height: 200,
+      },
+      500
+    );
+
+    $([
+      heroItem2,
+      heroItem3,
+      heroItem4,
+      heroItem5,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ]).animate(
       {
         bottom: 0,
       },
