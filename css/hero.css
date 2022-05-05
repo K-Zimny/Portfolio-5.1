@@ -23,7 +23,7 @@
   font-family: var(--body-font);
   font-size: 3rem;
   cursor: default;
-  background: url(" /img/textures/subtle-dots.png");
+  background: url("../img/textures/subtle-dots.png");
   background-color: #1a1a1a;
   transform: skewX(-10deg);
 }
@@ -43,7 +43,7 @@
 .hero__hero-display__item:first-of-type:hover > .hero__hero-display__item-effect,
 .hero__hero-display__item:first-of-type:hover > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_1_effect);
-  background: url("/img/building-screenshots/html-example.png");
+  background: url("../img/building-screenshots/html-example.png");
   background-size: auto;
 }
 
@@ -73,7 +73,7 @@
 .hero__hero-display__item:nth-of-type(2):hover > .hero__hero-display__item-effect,
 .hero__hero-display__item:nth-of-type(2):hover > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_2_effect);
-  background: url("/img/building-screenshots/css-example-2.png");
+  background: url("../img/building-screenshots/css-example-2.png");
   background-size: auto;
 }
 
@@ -103,7 +103,7 @@
 .hero__hero-display__item:nth-of-type(3):hover > .hero__hero-display__item-effect,
 .hero__hero-display__item:nth-of-type(3):hover > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_3_effect);
-  background: url("/img/building-screenshots/js-example-3.png");
+  background: url("../img/building-screenshots/js-example-3.png");
   background-size: auto;
 }
 
@@ -133,7 +133,7 @@
 .hero__hero-display__item:nth-of-type(4):hover > .hero__hero-display__item-effect,
 .hero__hero-display__item:nth-of-type(4):hover > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_4_effect);
-  background: url("/img/building-screenshots/wp-example.png");
+  background: url("../img/building-screenshots/wp-example.png");
   background-size: cover;
 }
 
@@ -163,7 +163,7 @@
 .hero__hero-display__item:nth-of-type(5):hover > .hero__hero-display__item-effect,
 .hero__hero-display__item:nth-of-type(5):hover > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_5_effect);
-  background: url("/img/building-screenshots/threejs-example-3.png");
+  background: url("../img/building-screenshots/threejs-example-3.png");
   background-size: cover;
 }
 
@@ -193,7 +193,7 @@
 .hero__hero-display__item:nth-of-type(6):hover > .hero__hero-display__item-effect,
 .hero__hero-display__item:nth-of-type(6):hover > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_6_effect);
-  background: url("/img/building-screenshots/git-example.png");
+  background: url("../img/building-screenshots/git-example.png");
   background-size: cover;
 }
 
@@ -223,7 +223,7 @@
 .hero__hero-display__item:nth-of-type(7):hover > .hero__hero-display__item-effect,
 .hero__hero-display__item:nth-of-type(7):hover > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_7_effect);
-  background: url("/img/building-screenshots/php-example.png");
+  background: url("../img/building-screenshots/php-example.png");
   background-size: cover;
 }
 
@@ -253,7 +253,7 @@
 .hero__hero-display__item:nth-of-type(8):hover > .hero__hero-display__item-effect,
 .hero__hero-display__item:nth-of-type(8):hover > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_8_effect);
-  background: url("/img/building-screenshots/xd-example.png");
+  background: url("../img/building-screenshots/xd-example.png");
   background-size: cover;
 }
 
@@ -284,7 +284,7 @@
   position: absolute;
   content: "";
   inset: 0;
-  background: url(" /img/textures/random-grey-variations.png");
+  background: url("../img/textures/random-grey-variations.png");
   opacity: 0.8;
   background-size: contain;
   border-bottom-right-radius: 40px;
@@ -308,7 +308,7 @@
   position: absolute;
   content: "";
   inset: 0;
-  background: url(" /img/textures/random-grey-variations.png");
+  background: url("../img/textures/random-grey-variations.png");
   background-size: contain;
   opacity: 0.8;
   border-bottom-left-radius: 25px;
