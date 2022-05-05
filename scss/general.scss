@@ -8,7 +8,7 @@
 
   //hero section vars
 
-  --hero__hero-display__item_blur: 0px;
+  --hero__hero-display__item_blur: 16px;
 
   --hero__hero-display__item_1: green;
   --hero__hero-display__item_2: yellow;
@@ -18,8 +18,51 @@
   --hero__hero-display__item_6: blue;
   --hero__hero-display__item_7: skyblue;
   --hero__hero-display__item_8: limegreen;
-}
 
+  --hero__hero-display__item_1_effect_intensity: -250%;
+
+  --hero__hero-display__item_1_effect: linear-gradient(
+    var(--hero__hero-display__item_1)
+      var(--hero__hero-display__item_1_effect_intensity),
+    var(--main-bg-color)
+  );
+  --hero__hero-display__item_2_effect: linear-gradient(
+    var(--hero__hero-display__item_2)
+      var(--hero__hero-display__item_1_effect_intensity),
+    var(--main-bg-color)
+  );
+  --hero__hero-display__item_3_effect: linear-gradient(
+    var(--hero__hero-display__item_3)
+      var(--hero__hero-display__item_1_effect_intensity),
+    var(--main-bg-color)
+  );
+  --hero__hero-display__item_4_effect: linear-gradient(
+    var(--hero__hero-display__item_4)
+      var(--hero__hero-display__item_1_effect_intensity),
+    var(--main-bg-color)
+  );
+  --hero__hero-display__item_5_effect: linear-gradient(
+    var(--hero__hero-display__item_5)
+      var(--hero__hero-display__item_1_effect_intensity),
+    var(--main-bg-color)
+  );
+  --hero__hero-display__item_6_effect: linear-gradient(
+    var(--hero__hero-display__item_6)
+      var(--hero__hero-display__item_1_effect_intensity),
+    var(--main-bg-color)
+  );
+  --hero__hero-display__item_7_effect: linear-gradient(
+    var(--hero__hero-display__item_7)
+      var(--hero__hero-display__item_1_effect_intensity),
+    var(--main-bg-color)
+  );
+  --hero__hero-display__item_8_effect: linear-gradient(
+    var(--hero__hero-display__item_8)
+      var(--hero__hero-display__item_1_effect_intensity),
+    var(--main-bg-color)
+  );
+}
+// linear-gradient(yellow, #1f1f1f 100%);
 body {
   background-color: var(--main-bg-color);
   color: var(--gray-1);

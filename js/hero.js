@@ -3,15 +3,6 @@
 $(document).ready(function () {
   console.log("ready!");
 
-  //   const heroItem1 = $("jsHeroItem1 >");
-  //   const heroItem2 = document.getElementById("jsHeroItem2");
-  //   const heroItem3 = document.getElementById("jsHeroItem3");
-  //   const heroItem4 = document.getElementById("jsHeroItem4");
-  //   const heroItem5 = document.getElementById("jsHeroItem5");
-  //   const heroItem6 = document.getElementById("jsHeroItem6");
-  //   const heroItem7 = document.getElementById("jsHeroItem7");
-  //   const heroItem8 = document.getElementById("jsHeroItem8");
-
   const heroItem1 = document.getElementById("jsHeroItem1");
   const heroItem2 = document.getElementById("jsHeroItem2");
   const heroItem3 = document.getElementById("jsHeroItem3");
@@ -20,6 +11,7 @@ $(document).ready(function () {
   const heroItem6 = document.getElementById("jsHeroItem6");
   const heroItem7 = document.getElementById("jsHeroItem7");
   const heroItem8 = document.getElementById("jsHeroItem8");
+  const heroBg = document.getElementById("jsHero");
 
   const heroItemEffect1 = document.getElementById("jsHeroItemEffect1");
   //   const heroItem2 = document.getElementById("jsHeroItem2");
@@ -33,136 +25,83 @@ $(document).ready(function () {
   //hero item color hover on btm effect
 
   //   hero item button depress and return
+
   //hero item 1
-  //   heroItem1.addEventListener("mouseenter", function () {
-  //     $(heroItemEffect1)
-  //       .animate
-  //       //   {
-  //       //     height: 300,
-  //       //   },
-  //       //   500
-  //       ();
 
-  //     // $(heroItem1).animate(
-  //     //   {
-  //     //     bottom: 50,
-  //     //     // height: -700,
-  //     //   },
-  //     //   500
-  //     // );
-  //     $([
-  //       heroItem2,
-  //       heroItem3,
-  //       heroItem4,
-  //       heroItem5,
-  //       heroItem6,
-  //       heroItem7,
-  //       heroItem8,
-  //     ]).animate(
-  //       {
-  //         bottom: -50,
-  //       },
-  //       500
-  //     );
-  //   });
-
-  //   heroItem1.addEventListener("mouseleave", function () {
-  //     $(heroItemEffect1).animate(
-  //       {
-  //         height: 0,
-  //       },
-  //       500
-  //     );
-
-  //     $(heroItem1).animate(
-  //       {
-  //         bottom: 0,
-  //         height: 200,
-  //       },
-  //       500
-  //     );
-
-  //     $([
-  //       heroItem2,
-  //       heroItem3,
-  //       heroItem4,
-  //       heroItem5,
-  //       heroItem6,
-  //       heroItem7,
-  //       heroItem8,
-  //     ]).animate(
-  //       {
-  //         bottom: 0,
-  //       },
-  //       500
-  //     );
-  //   });
-
-  //hero item2
-
-  heroItem2.addEventListener("mouseenter", function () {
+  heroItem1.addEventListener("mouseenter", function () {
+    $(heroItem1).animate(
+      {
+        bottom: 125,
+      },
+      500,
+      "swing"
+    );
+    var itemRandom = Math.floor(Math.random() * 50) + -100;
     $(heroItem2).animate(
       {
         bottom: 50,
       },
-      50
+      712,
+      "swing"
     );
-    var itemRandom = Math.floor(Math.random() * 50) + -100;
-    $(heroItem1).animate(
-      {
-        bottom: itemRandom,
-      },
-      71
-    );
+    $(".hero__hero-display__item-effect").css("background:", "green");
     var itemRandom3 = Math.floor(Math.random() * 50) + -75;
     $(heroItem3).animate(
       {
-        bottom: itemRandom3,
+        bottom: 0,
       },
-      90
+      900,
+      "swing"
     );
     var itemRandom4 = Math.floor(Math.random() * 50) + -25;
     $(heroItem4).animate(
       {
-        bottom: itemRandom4,
+        bottom: 50,
       },
-      100
+      1000,
+      "swing"
     );
     $(heroItem5).animate(
       {
-        bottom: -10,
+        bottom: -50,
       },
-      55
+      556,
+      "swing"
     );
     $(heroItem6).animate(
       {
-        bottom: -52,
+        bottom: -100,
       },
-      68
+      683,
+      "swing"
     );
 
     $(heroItem7).animate(
       {
-        bottom: -51,
+        bottom: 0,
       },
-      100
+      1000,
+      "swing"
     );
 
     $(heroItem8).animate(
       {
-        bottom: -40,
+        bottom: -50,
       },
-      100
+      900,
+      "swing"
     );
   });
 
   heroItem2.addEventListener("mouseleave", function () {
-    $(heroItem2).animate(
-      {
-        bottom: 0,
-      },
-      250
-    );
+    $(heroItem2)
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   500
+      // );
+      .stop();
     $([
       heroItem1,
       heroItem3,
@@ -171,12 +110,115 @@ $(document).ready(function () {
       heroItem6,
       heroItem7,
       heroItem8,
-    ]).animate(
+    ])
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   200
+      // );
+      // .clearQueue();
+      .stop();
+  });
+
+  //hero item2
+
+  heroItem2.addEventListener("mouseenter", function () {
+    $(heroItem2).animate(
+      {
+        bottom: 125,
+      },
+      500,
+      "swing"
+    );
+    var itemRandom = Math.floor(Math.random() * 50) + -100;
+    $(heroItem1).animate(
+      {
+        // bottom: itemRandom,
+        bottom: 0,
+      },
+      712,
+      "swing"
+    );
+    $(".hero__hero-display__item-effect").css("background:", "green");
+    var itemRandom3 = Math.floor(Math.random() * 50) + -75;
+    $(heroItem3).animate(
+      {
+        // bottom: itemRandom3,
+        bottom: 0,
+      },
+      900,
+      "swing"
+    );
+    var itemRandom4 = Math.floor(Math.random() * 50) + -25;
+    $(heroItem4).animate(
+      {
+        // bottom: itemRandom4,
+        bottom: -10,
+      },
+      1000,
+      "swing"
+    );
+    $(heroItem5).animate(
+      {
+        bottom: -10,
+        // bottom: -50,
+      },
+      556,
+      "swing"
+    );
+    $(heroItem6).animate(
+      {
+        // bottom: -52,
+        bottom: -10,
+      },
+      683,
+      "swing"
+    );
+
+    $(heroItem7).animate(
       {
         bottom: 0,
       },
-      150
+      1000,
+      "swing"
     );
+
+    $(heroItem8).animate(
+      {
+        bottom: 0,
+      },
+      900,
+      "swing"
+    );
+  });
+
+  heroItem2.addEventListener("mouseleave", function () {
+    $(heroItem2)
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   500
+      // );
+      .stop();
+    $([
+      heroItem1,
+      heroItem3,
+      heroItem5,
+      heroItem4,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ])
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   200
+      // );
+      // .clearQueue();
+      .stop();
   });
 
   //hero item3
@@ -184,62 +226,62 @@ $(document).ready(function () {
   heroItem3.addEventListener("mouseenter", function () {
     $(heroItem3).animate(
       {
-        bottom: 50,
+        bottom: 125,
       },
-      50
+      500
     );
     var itemRandom = Math.floor(Math.random() * 50) + -100;
     $(heroItem1).animate(
       {
-        bottom: itemRandom,
+        bottom: -50,
       },
-      31
+      712
     );
     var itemRandom3 = Math.floor(Math.random() * 50) + -75;
     $(heroItem2).animate(
       {
-        bottom: itemRandom3,
+        bottom: 0,
       },
-      10
+      900
     );
     var itemRandom4 = Math.floor(Math.random() * 50) + -25;
     $(heroItem4).animate(
       {
-        bottom: itemRandom4,
+        bottom: -50,
       },
-      50
+      1000
     );
     var itemRandom5 = Math.floor(Math.random() * 50) + -78;
 
     $(heroItem5).animate(
       {
-        bottom: itemRandom5,
+        bottom: 0,
       },
-      93
+      556
     );
     var itemRandom6 = Math.floor(Math.random() * 50) + -86;
 
     $(heroItem6).animate(
       {
-        bottom: itemRandom6,
+        bottom: -50,
       },
-      45
+      683
     );
     var itemRandom7 = Math.floor(Math.random() * 50) + -5;
 
     $(heroItem7).animate(
       {
-        bottom: itemRandom7,
+        bottom: -50,
       },
-      53
+      1000
     );
     var itemRandom8 = Math.floor(Math.random() * 50) + -1;
 
     $(heroItem8).animate(
       {
-        bottom: itemRandom8,
+        bottom: 0,
       },
-      78
+      1000
     );
   });
 
@@ -253,85 +295,98 @@ $(document).ready(function () {
       heroItem6,
       heroItem7,
       heroItem8,
-    ]).animate(
-      {
-        bottom: 0,
-      },
-      0
-    );
+    ])
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   300
+      // );
+      .stop();
   });
 
   //hero item4
 
   heroItem4.addEventListener("mouseenter", function () {
-    $(heroItem3).animate(
+    $(heroItem4).animate(
       {
-        bottom: 50,
+        bottom: 125,
       },
       500
     );
     var itemRandom = Math.floor(Math.random() * 50) + -24;
     $(heroItem1).animate(
       {
-        bottom: itemRandom,
+        bottom: -75,
       },
-      71
+      712
     );
     var itemRandom3 = Math.floor(Math.random() * 50) + -68;
     $(heroItem2).animate(
       {
-        bottom: itemRandom3,
+        bottom: -100,
       },
-      90
+      900
     );
-    var itemRandom4 = Math.floor(Math.random() * 50) + -95;
-    $(heroItem4).animate(
+    var itemRandom2 = Math.floor(Math.random() * 50) + -95;
+    $(heroItem3).animate(
       {
-        bottom: itemRandom4,
+        bottom: -125,
       },
-      100
+      1000
     );
     var itemRandom5 = Math.floor(Math.random() * 50) + -69;
 
     $(heroItem5).animate(
       {
-        bottom: itemRandom5,
+        bottom: 0,
       },
-      55
+      556
     );
     var itemRandom6 = Math.floor(Math.random() * 50) + -46;
 
     $(heroItem6).animate(
       {
-        bottom: itemRandom6,
+        bottom: -50,
       },
-      68
+      683
     );
     var itemRandom7 = Math.floor(Math.random() * 50) + -84;
 
     $(heroItem7).animate(
       {
-        bottom: itemRandom7,
+        bottom: 50,
       },
-      100
+      1000
     );
     var itemRandom8 = Math.floor(Math.random() * 50) + -16;
 
     $(heroItem8).animate(
       {
-        bottom: itemRandom8,
+        bottom: 0,
       },
-      100
+      1000
     );
   });
 
   heroItem4.addEventListener("mouseleave", function () {
-    $(heroItem4).animate(
-      {
-        bottom: 0,
-      },
-      0
-    );
+    $([
+      heroItem1,
+      heroItem2,
+      heroItem3,
+      heroItem5,
+      heroItem4,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ])
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   250
+      // );
+      .stop();
   });
 
   //hero item5
@@ -339,19 +394,83 @@ $(document).ready(function () {
   heroItem5.addEventListener("mouseenter", function () {
     $(heroItem5).animate(
       {
-        bottom: 50,
+        bottom: 125,
       },
       500
+    );
+    var itemRandom = Math.floor(Math.random() * 50) + -24;
+    $(heroItem1).animate(
+      {
+        bottom: -75,
+      },
+      712
+    );
+    var itemRandom3 = Math.floor(Math.random() * 50) + -68;
+    $(heroItem2).animate(
+      {
+        bottom: -75,
+      },
+      900
+    );
+    var itemRandom4 = Math.floor(Math.random() * 50) + -95;
+    $(heroItem4).animate(
+      {
+        bottom: -50,
+      },
+      1000
+    );
+    var itemRandom5 = Math.floor(Math.random() * 50) + -69;
+
+    $(heroItem3).animate(
+      {
+        bottom: -75,
+      },
+      556
+    );
+    var itemRandom6 = Math.floor(Math.random() * 50) + -46;
+
+    $(heroItem6).animate(
+      {
+        bottom: -50,
+      },
+      683
+    );
+    var itemRandom7 = Math.floor(Math.random() * 50) + -84;
+
+    $(heroItem7).animate(
+      {
+        bottom: 0,
+      },
+      1000
+    );
+    var itemRandom8 = Math.floor(Math.random() * 50) + -16;
+
+    $(heroItem8).animate(
+      {
+        bottom: 0,
+      },
+      1000
     );
   });
 
   heroItem5.addEventListener("mouseleave", function () {
-    $(heroItem5).animate(
-      {
-        bottom: 0,
-      },
-      500
-    );
+    $([
+      heroItem1,
+      heroItem2,
+      heroItem3,
+      heroItem5,
+      heroItem4,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ])
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   175
+      // );
+      .stop();
   });
 
   //hero item6
@@ -359,19 +478,83 @@ $(document).ready(function () {
   heroItem6.addEventListener("mouseenter", function () {
     $(heroItem6).animate(
       {
-        bottom: 50,
+        bottom: 125,
       },
       500
+    );
+    var itemRandom = Math.floor(Math.random() * 50) + -24;
+    $(heroItem1).animate(
+      {
+        bottom: -125,
+      },
+      712
+    );
+    var itemRandom3 = Math.floor(Math.random() * 50) + -68;
+    $(heroItem2).animate(
+      {
+        bottom: -75,
+      },
+      900
+    );
+    var itemRandom4 = Math.floor(Math.random() * 50) + -95;
+    $(heroItem4).animate(
+      {
+        bottom: -50,
+      },
+      1000
+    );
+    var itemRandom5 = Math.floor(Math.random() * 50) + -69;
+
+    $(heroItem3).animate(
+      {
+        bottom: -50,
+      },
+      556
+    );
+    var itemRandom6 = Math.floor(Math.random() * 50) + -46;
+
+    $(heroItem5).animate(
+      {
+        bottom: 0,
+      },
+      683
+    );
+    var itemRandom7 = Math.floor(Math.random() * 50) + -84;
+
+    $(heroItem7).animate(
+      {
+        bottom: 0,
+      },
+      1000
+    );
+    var itemRandom8 = Math.floor(Math.random() * 50) + -16;
+
+    $(heroItem8).animate(
+      {
+        bottom: 50,
+      },
+      1000
     );
   });
 
   heroItem6.addEventListener("mouseleave", function () {
-    $(heroItem6).animate(
-      {
-        bottom: 0,
-      },
-      500
-    );
+    $([
+      heroItem1,
+      heroItem2,
+      heroItem3,
+      heroItem5,
+      heroItem4,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ])
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   235
+      // );
+      .stop();
   });
 
   //hero item7
@@ -379,19 +562,83 @@ $(document).ready(function () {
   heroItem7.addEventListener("mouseenter", function () {
     $(heroItem7).animate(
       {
-        bottom: 50,
+        bottom: 125,
       },
       500
+    );
+    var itemRandom = Math.floor(Math.random() * 50) + -24;
+    $(heroItem1).animate(
+      {
+        bottom: -125,
+      },
+      712
+    );
+    var itemRandom3 = Math.floor(Math.random() * 50) + -68;
+    $(heroItem2).animate(
+      {
+        bottom: -150,
+      },
+      900
+    );
+    var itemRandom4 = Math.floor(Math.random() * 50) + -95;
+    $(heroItem4).animate(
+      {
+        bottom: -50,
+      },
+      1000
+    );
+    var itemRandom5 = Math.floor(Math.random() * 50) + -69;
+
+    $(heroItem3).animate(
+      {
+        bottom: -200,
+      },
+      556
+    );
+    var itemRandom6 = Math.floor(Math.random() * 50) + -46;
+
+    $(heroItem5).animate(
+      {
+        bottom: -50,
+      },
+      683
+    );
+    var itemRandom7 = Math.floor(Math.random() * 50) + -84;
+
+    $(heroItem6).animate(
+      {
+        bottom: -100,
+      },
+      1000
+    );
+    var itemRandom8 = Math.floor(Math.random() * 50) + -16;
+
+    $(heroItem8).animate(
+      {
+        bottom: 50,
+      },
+      1000
     );
   });
 
   heroItem7.addEventListener("mouseleave", function () {
-    $(heroItem7).animate(
-      {
-        bottom: 0,
-      },
-      500
-    );
+    $([
+      heroItem1,
+      heroItem2,
+      heroItem3,
+      heroItem5,
+      heroItem4,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ])
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   260
+      // );
+      .stop();
   });
 
   //hero item8
@@ -399,18 +646,100 @@ $(document).ready(function () {
   heroItem8.addEventListener("mouseenter", function () {
     $(heroItem8).animate(
       {
-        bottom: 50,
+        bottom: 125,
       },
       500
+    );
+    var itemRandom = Math.floor(Math.random() * 50) + -24;
+    $(heroItem1).animate(
+      {
+        bottom: -200,
+      },
+      712
+    );
+    var itemRandom3 = Math.floor(Math.random() * 50) + -68;
+    $(heroItem2).animate(
+      {
+        bottom: -150,
+      },
+      900
+    );
+    var itemRandom4 = Math.floor(Math.random() * 50) + -95;
+    $(heroItem4).animate(
+      {
+        bottom: -50,
+      },
+      1000
+    );
+    var itemRandom5 = Math.floor(Math.random() * 50) + -69;
+
+    $(heroItem3).animate(
+      {
+        bottom: -100,
+      },
+      556
+    );
+    var itemRandom6 = Math.floor(Math.random() * 50) + -46;
+
+    $(heroItem5).animate(
+      {
+        bottom: -50,
+      },
+      683
+    );
+    var itemRandom7 = Math.floor(Math.random() * 50) + -84;
+
+    $(heroItem6).animate(
+      {
+        bottom: -50,
+      },
+      1000
+    );
+    var itemRandom8 = Math.floor(Math.random() * 50) + -16;
+
+    $(heroItem7).animate(
+      {
+        bottom: 50,
+      },
+      1000
     );
   });
 
   heroItem8.addEventListener("mouseleave", function () {
-    $(heroItem8).animate(
+    $([
+      heroItem1,
+      heroItem2,
+      heroItem3,
+      heroItem5,
+      heroItem4,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ])
+      // .animate(
+      //   {
+      //     bottom: 0,
+      //   },
+      //   225
+      // );
+      .stop();
+  });
+
+  heroBg.addEventListener("click", function () {
+    $([
+      heroItem1,
+      heroItem2,
+      heroItem3,
+      heroItem5,
+      heroItem4,
+      heroItem6,
+      heroItem7,
+      heroItem8,
+    ]).animate(
       {
         bottom: 0,
       },
-      500
+      225
     );
   });
 });

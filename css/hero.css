@@ -23,7 +23,9 @@
   font-family: var(--body-font);
   font-size: 3rem;
   cursor: default;
-  background-color: var(--main-bg-color);
+  background: url(" /img/textures/subtle-dots.png");
+  background-color: #1a1a1a;
+  transform: skewX(-10deg);
 }
 
 .hero__hero-display__item:first-of-type > p:hover {
@@ -35,10 +37,14 @@
   color: var(--hero__hero-display__item_1);
   border-color: var(--hero__hero-display__item_1);
   filter: drop-shadow(0px 0px var(--hero__hero-display__item_blur) var(--hero__hero-display__item_1));
+  background-color: rgb(0, 43, 0);
 }
 
-.hero__hero-display__item:first-of-type:hover > .hero__hero-display__item-effect {
-  background-color: var(--hero__hero-display__item_1);
+.hero__hero-display__item:first-of-type:hover > .hero__hero-display__item-effect,
+.hero__hero-display__item:first-of-type:hover > .hero__hero-display__item-effect_side {
+  background: var(--hero__hero-display__item_1_effect);
+  background: url("/img/building-screenshots/html-example.png");
+  background-size: auto;
 }
 
 .hero__hero-display__item:nth-of-type(2) > p:hover {
@@ -50,72 +56,168 @@
   color: var(--hero__hero-display__item_2);
   border-color: var(--hero__hero-display__item_2);
   filter: drop-shadow(0px 0px var(--hero__hero-display__item_blur) var(--hero__hero-display__item_2));
+  background-color: rgb(51, 51, 1);
 }
 
-.hero__hero-display__item:nth-of-type(2):hover > .hero__hero-display__item-effect {
-  background-color: var(--hero__hero-display__item_2);
+.hero__hero-display__item:nth-of-type(2):hover > .hero__hero-display__item-effect,
+.hero__hero-display__item:nth-of-type(2):hover > .hero__hero-display__item-effect_side {
+  background: var(--hero__hero-display__item_2_effect);
+  background: url("/img/building-screenshots/css-example-2.png");
+  background-size: auto;
 }
 
-.hero__hero-display__item:nth-of-type(3) > p:hover,
-.hero__hero-display__item:nth-of-type(3):hover {
+.hero__hero-display__item:nth-of-type(3) > p:hover {
+  color: var(--hero__hero-display__item_3);
+  border-color: var(--hero__hero-display__item_3);
+}
+
+.hero__hero-display__item:nth-of-type(3):hover > p {
   color: var(--hero__hero-display__item_3);
   border-color: var(--hero__hero-display__item_3);
   filter: drop-shadow(0px 0px var(--hero__hero-display__item_blur) var(--hero__hero-display__item_3));
+  background-color: rgb(53, 34, 0);
 }
 
-.hero__hero-display__item:nth-of-type(4) > p:hover,
-.hero__hero-display__item:nth-of-type(4):hover {
+.hero__hero-display__item:nth-of-type(3):hover > .hero__hero-display__item-effect,
+.hero__hero-display__item:nth-of-type(3):hover > .hero__hero-display__item-effect_side {
+  background: var(--hero__hero-display__item_3_effect);
+  background: url("/img/building-screenshots/js-example-3.png");
+  background-size: auto;
+}
+
+.hero__hero-display__item:nth-of-type(4) > p:hover {
+  color: var(--hero__hero-display__item_4);
+  border-color: var(--hero__hero-display__item_4);
+}
+
+.hero__hero-display__item:nth-of-type(4):hover > p {
   color: var(--hero__hero-display__item_4);
   border-color: var(--hero__hero-display__item_4);
   filter: drop-shadow(0px 0px var(--hero__hero-display__item_blur) var(--hero__hero-display__item_4));
+  background-color: rgb(61, 0, 0);
 }
 
-.hero__hero-display__item:nth-of-type(5) > p:hover,
-.hero__hero-display__item:nth-of-type(5):hover {
+.hero__hero-display__item:nth-of-type(4):hover > .hero__hero-display__item-effect,
+.hero__hero-display__item:nth-of-type(4):hover > .hero__hero-display__item-effect_side {
+  background: var(--hero__hero-display__item_4_effect);
+  background: url("/img/building-screenshots/xd-example.png");
+  background-size: auto;
+}
+
+.hero__hero-display__item:nth-of-type(5) > p:hover {
+  color: var(--hero__hero-display__item_5);
+  border-color: var(--hero__hero-display__item_5);
+}
+
+.hero__hero-display__item:nth-of-type(5):hover > p {
   color: var(--hero__hero-display__item_5);
   border-color: var(--hero__hero-display__item_5);
   filter: drop-shadow(0px 0px var(--hero__hero-display__item_blur) var(--hero__hero-display__item_5));
+  background-color: #2a002a;
 }
 
-.hero__hero-display__item:nth-of-type(6) > p:hover,
-.hero__hero-display__item:nth-of-type(6):hover {
+.hero__hero-display__item:nth-of-type(5):hover > .hero__hero-display__item-effect,
+.hero__hero-display__item:nth-of-type(5):hover > .hero__hero-display__item-effect_side {
+  background: var(--hero__hero-display__item_5_effect);
+  background: url("/img/building-screenshots/threejs-example.png");
+  background-size: auto;
+}
+
+.hero__hero-display__item:nth-of-type(6) > p:hover {
+  color: var(--hero__hero-display__item_6);
+  border-color: var(--hero__hero-display__item_6);
+}
+
+.hero__hero-display__item:nth-of-type(6):hover > p {
   color: var(--hero__hero-display__item_6);
   border-color: var(--hero__hero-display__item_6);
   filter: drop-shadow(0px 0px var(--hero__hero-display__item_blur) var(--hero__hero-display__item_6));
+  background-color: rgb(0, 0, 60);
 }
 
-.hero__hero-display__item:nth-of-type(7) > p:hover,
-.hero__hero-display__item:nth-of-type(7):hover {
+.hero__hero-display__item:nth-of-type(6):hover > .hero__hero-display__item-effect,
+.hero__hero-display__item:nth-of-type(6):hover > .hero__hero-display__item-effect_side {
+  background: var(--hero__hero-display__item_6_effect);
+  background: url("/img/building-screenshots/jq-example.png");
+  background-size: auto;
+}
+
+.hero__hero-display__item:nth-of-type(7) > p:hover {
+  color: var(--hero__hero-display__item_7);
+  border-color: var(--hero__hero-display__item_7);
+}
+
+.hero__hero-display__item:nth-of-type(7):hover > p {
   color: var(--hero__hero-display__item_7);
   border-color: var(--hero__hero-display__item_7);
   filter: drop-shadow(0px 0px var(--hero__hero-display__item_blur) var(--hero__hero-display__item_7));
+  background-color: rgb(1, 43, 59);
 }
 
-.hero__hero-display__item:nth-of-type(8) > p:hover,
-.hero__hero-display__item:nth-of-type(8):hover {
+.hero__hero-display__item:nth-of-type(7):hover > .hero__hero-display__item-effect,
+.hero__hero-display__item:nth-of-type(7):hover > .hero__hero-display__item-effect_side {
+  background: var(--hero__hero-display__item_7_effect);
+  background: url("/img/building-screenshots/wp-example.png");
+  background-size: cover;
+}
+
+.hero__hero-display__item:nth-of-type(8) > p:hover {
+  color: var(--hero__hero-display__item_8);
+  border-color: var(--hero__hero-display__item_8);
+}
+
+.hero__hero-display__item:nth-of-type(8):hover > p {
   color: var(--hero__hero-display__item_8);
   border-color: var(--hero__hero-display__item_8);
   filter: drop-shadow(0px 0px var(--hero__hero-display__item_blur) var(--hero__hero-display__item_8));
+  background-color: rgb(0, 67, 0);
+}
+
+.hero__hero-display__item:nth-of-type(8):hover > .hero__hero-display__item-effect,
+.hero__hero-display__item:nth-of-type(8):hover > .hero__hero-display__item-effect_side {
+  background: var(--hero__hero-display__item_8_effect);
+  background: url("/img/building-screenshots/php-example.png");
+  background-size: cover;
 }
 
 .hero__hero-display__item-effect {
-  background: url(" /img/textures/subtle-dots.png");
+  background: linear-gradient(#343434, #1f1f1f);
   background-size: auto;
   min-height: 300px;
   position: relative;
-  top: 3px;
+  transform: skewX(3.3deg);
+  transition: all ease 1s;
 }
 
 .hero__hero-display__item-effect::after {
   position: absolute;
   content: "";
   inset: 0;
-  background: linear-gradient(#7b7b7b, #1f1f1f);
+  background: url(" /img/textures/random-grey-variations.png");
   opacity: 0.8;
+  background-size: contain;
 }
 
 .hero__hero-display__item:nth-last-child(-n+3) > .hero__hero-display__item-effect {
   height: 200px;
+}
+
+.hero__hero-display__item-effect_side {
+  position: absolute;
+  height: 301px;
+  width: 18px;
+  background: linear-gradient(#343434, #1f1f1f);
+  transform: translate(438px, -354px) skew(2deg, 280deg);
+  z-index: 1;
+}
+
+.hero__hero-display__item-effect_side::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: url(" /img/textures/random-grey-variations.png");
+  background-size: contain;
+  opacity: 0.8;
 }
 
 .hero__hero-display__item:nth-of-type(2) {
