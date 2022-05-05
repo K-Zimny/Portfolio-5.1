@@ -1,8 +1,9 @@
 // hero display code.
 
-.hero {
-  // background: url("/img/textures/use-your-illusion.png");
-}
+// .hero {
+//   background: url("/img/textures/julius-jansson-OQIMRpwcvpQ-unsplash.jpg");
+//   background-size: cover;
+// }
 
 // ---------------------------------------------------------------
 //hero grid setup
@@ -405,10 +406,76 @@
   position: absolute;
   content: "";
   inset: 0;
-  background: url("../img/textures/random-grey-variations.png");
+  background: url("../img/textures/TexturesCom_HighRiseNight0062_S.jpg");
   opacity: 0.8;
   background-size: contain;
   border-bottom-right-radius: 40px;
+}
+
+// hero item effect img
+
+.hero__hero-display__item:nth-of-type(1)
+  .hero__hero-display__item-effect::after,
+.hero__hero-display__item:nth-of-type(1)
+  .hero__hero-display__item-effect_side::after {
+  background: url("../img/textures/TexturesCom_HighRiseNight0095_1_S.jpg");
+  background-size: contain;
+}
+
+.hero__hero-display__item:nth-of-type(2)
+  .hero__hero-display__item-effect::after,
+.hero__hero-display__item:nth-of-type(2)
+  .hero__hero-display__item-effect_side::after {
+  background: url("../img/textures/TexturesCom_HighRiseNight0026_S.jpg");
+  background-size: contain;
+}
+
+.hero__hero-display__item:nth-of-type(3)
+  .hero__hero-display__item-effect::after,
+.hero__hero-display__item:nth-of-type(3)
+  .hero__hero-display__item-effect_side::after {
+  background: url("../img/textures/TexturesCom_HighRiseNight0009_1_seamless_S.jpg");
+  background-size: contain;
+}
+
+.hero__hero-display__item:nth-of-type(4)
+  .hero__hero-display__item-effect::after,
+.hero__hero-display__item:nth-of-type(4)
+  .hero__hero-display__item-effect_side::after {
+  background: url("../img/textures/TexturesCom_HighRiseNight0013_1_seamless_S.jpg");
+  background-size: contain;
+}
+
+.hero__hero-display__item:nth-of-type(5)
+  .hero__hero-display__item-effect::after,
+.hero__hero-display__item:nth-of-type(5)
+  .hero__hero-display__item-effect_side::after {
+  background: url("../img/textures/TexturesCom_HighRiseNight0048_1_seamless_S.jpg");
+  background-size: contain;
+}
+
+.hero__hero-display__item:nth-of-type(6)
+  .hero__hero-display__item-effect::after,
+.hero__hero-display__item:nth-of-type(6)
+  .hero__hero-display__item-effect_side::after {
+  background: url("../img/textures/TexturesCom_HighRiseNight0001_2_S.jpg");
+  background-size: contain;
+}
+
+.hero__hero-display__item:nth-of-type(7)
+  .hero__hero-display__item-effect::after,
+.hero__hero-display__item:nth-of-type(7)
+  .hero__hero-display__item-effect_side::after {
+  background: url("../img/textures/TexturesCom_HighRiseNight0018_2_S.jpg");
+  background-size: contain;
+}
+
+.hero__hero-display__item:nth-of-type(8)
+  .hero__hero-display__item-effect::after,
+.hero__hero-display__item:nth-of-type(8)
+  .hero__hero-display__item-effect_side::after {
+  background: url("../img/textures/TexturesCom_HighRiseNight0062_S.jpg");
+  background-size: contain;
 }
 
 // hero item effect last row effect

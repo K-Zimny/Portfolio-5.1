@@ -59,6 +59,9 @@ body {
   background-color: var(--main-bg-color);
   color: var(--gray-1);
   font-family: var(--body-font);
+  background: url("/img/textures/muzammil-soorma-cIRG0OD2pms-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 
 .container {
