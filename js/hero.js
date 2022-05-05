@@ -263,7 +263,7 @@ $(document).ready(function () {
 
     $(heroItem6).animate(
       {
-        bottom: -50,
+        bottom: 15,
       },
       683
     );
