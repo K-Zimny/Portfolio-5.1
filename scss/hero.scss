@@ -1,5 +1,8 @@
 // hero display code.
 
+.hero {
+}
+
 // ---------------------------------------------------------------
 //hero grid setup
 // ---------------------------------------------------------------
@@ -236,8 +239,8 @@
 .hero__hero-display__item:nth-of-type(5):hover
   > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_5_effect);
-  background: url("/img/building-screenshots/threejs-example.png");
-  background-size: auto;
+  background: url("/img/building-screenshots/threejs-example-3.png");
+  background-size: cover;
 }
 
 .hero__hero-display__item:nth-of-type(5):hover
@@ -245,12 +248,12 @@
 .hero__hero-display__item:nth-of-type(5):hover
   .hero__hero-display__item-effect_side::after {
   background-color: var(--hero__hero-display__item_5);
-  opacity: var(--hero__hero-display__effect_opacity);
+  opacity: 0.3;
 }
 
 .hero__hero-display__item:nth-of-type(5):hover
   .hero__hero-display__item-effect::after {
-  opacity: var(--hero__hero-display__effect_opacity);
+  opacity: 0.3;
   filter: drop-shadow(
     0 0 var(--hero__hero-display__item_blur) var(--hero__hero-display__item_5)
   );
@@ -278,8 +281,8 @@
 .hero__hero-display__item:nth-of-type(6):hover
   > .hero__hero-display__item-effect_side {
   background: var(--hero__hero-display__item_6_effect);
-  background: url("/img/building-screenshots/jq-example.png");
-  background-size: auto;
+  background: url("/img/building-screenshots/git-example.png");
+  background-size: cover;
 }
 
 .hero__hero-display__item:nth-of-type(6):hover
@@ -287,12 +290,12 @@
 .hero__hero-display__item:nth-of-type(6):hover
   .hero__hero-display__item-effect_side::after {
   background-color: var(--hero__hero-display__item_6);
-  opacity: var(--hero__hero-display__effect_opacity);
+  opacity: 0.3;
 }
 
 .hero__hero-display__item:nth-of-type(6):hover
   .hero__hero-display__item-effect::after {
-  opacity: var(--hero__hero-display__effect_opacity);
+  opacity: 0.3;
   filter: drop-shadow(
     0 0 var(--hero__hero-display__item_blur) var(--hero__hero-display__item_6)
   );
@@ -454,6 +457,7 @@
   margin-left: auto;
   margin-right: auto;
   filter: drop-shadow(2px 4px 6px black);
+  z-index: 1;
 }
 
 .hero__hero-display__item:hover .hero__hero-display__item-effect p {
