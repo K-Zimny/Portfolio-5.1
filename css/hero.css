@@ -4,6 +4,11 @@
   gap: 10px 10px;
   grid-auto-rows: minmax(100px, auto);
 }
+@media only screen and (max-width: 600px) {
+  .hero__hero-display {
+    transform: rotate(90deg) translate(-449px, 60px) scale(0.5);
+  }
+}
 
 .hero__hero-display__item {
   position: relative;

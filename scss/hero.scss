@@ -13,6 +13,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px 10px;
   grid-auto-rows: minmax(100px, auto);
+
+  @media only screen and (max-width: 600px) {
+    transform: rotate(90deg) translate(-449px, 60px) scale(0.5);
+  }
 }
 
 // ---------------------------------------------------------------
