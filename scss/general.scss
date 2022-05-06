@@ -6,6 +6,10 @@
 
   --body-font: "Montserrat", sans-serif;
 
+  // a elements
+
+  --hover-transform__scale: 1.1;
+
   //hero section vars
 
   --hero__hero-display__item_blur: 16px;
@@ -63,6 +67,12 @@
     var(--main-bg-color)
   );
 }
+//rotate page effect
+
+html {
+  // transform: rotate(-90deg);
+}
+
 // linear-gradient(yellow, #1f1f1f 100%);
 body {
   background-color: var(--main-bg-color);
@@ -71,8 +81,12 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1920px;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container-hero {
+  max-width: 1440px;
 }

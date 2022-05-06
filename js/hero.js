@@ -11,7 +11,7 @@ $(document).ready(function () {
   const heroItem6 = document.getElementById("jsHeroItem6");
   const heroItem7 = document.getElementById("jsHeroItem7");
   const heroItem8 = document.getElementById("jsHeroItem8");
-  const heroBg = document.getElementById("jsHero");
+  const heroHeader = document.getElementById("jsHeroHeader");
 
   const heroItemEffect1 = document.getElementById("jsHeroItemEffect1");
   //   const heroItem2 = document.getElementById("jsHeroItem2");
@@ -725,7 +725,7 @@ $(document).ready(function () {
       .stop();
   });
 
-  heroBg.addEventListener("click", function () {
+  heroHeader.addEventListener("mouseenter", function () {
     $([
       heroItem1,
       heroItem2,

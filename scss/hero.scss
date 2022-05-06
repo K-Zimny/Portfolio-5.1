@@ -395,7 +395,7 @@
 // ---------------------------------------------------------------
 
 .hero__hero-display__item-effect {
-  background: linear-gradient(#343434, #1f1f1f);
+  background: linear-gradient(#565656, #1f1f1f);
   background-size: auto;
   min-height: 300px;
   position: relative;
@@ -410,9 +410,9 @@
   position: absolute;
   content: "";
   inset: 0;
-  background: url("../img/textures/random-grey-variations.png");
+  background: url("../img/textures/office.png");
+  background-size: auto;
   opacity: 0.8;
-  background-size: contain;
   border-bottom-right-radius: 40px;
 }
 
@@ -439,7 +439,7 @@
   position: absolute;
   content: "";
   inset: 0;
-  background: url("../img/textures/random-grey-variations.png");
+  background: url("../img/textures/office.png");
   background-size: contain;
   opacity: 0.8;
   border-bottom-left-radius: 25px;
@@ -464,6 +464,7 @@
   margin-right: auto;
   filter: drop-shadow(2px 4px 6px black);
   z-index: 1;
+  cursor: default;
 }
 
 .hero__hero-display__item:hover .hero__hero-display__item-effect p {
@@ -501,4 +502,20 @@
 .hero__hero-display__item:nth-of-type(8) {
   transform: translateY(-400px);
   z-index: 3;
+}
+
+// ---------------------------------------------------------------
+// h1 transform styles
+// ---------------------------------------------------------------
+
+h1 {
+  text-align: center;
+  border: 3px solid var(--gray-1);
+  transform: skewX(-10deg) translateX(15px);
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../img/textures/subtle-dots.png");
+  text-transform: uppercase;
+  cursor: default;
 }
