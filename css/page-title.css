@@ -1,0 +1,29 @@
+.page__title {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  position: relative;
+}
+.page__title::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 35%;
+  height: 1px;
+  background-color: var(--gray-1);
+  transform: translateX(-50%);
+}
+.page__title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 35%;
+  height: 1px;
+  background-color: var(--gray-1);
+  transform: translateX(-50%);
+}
+
+/*# sourceMappingURL=page-title.css.map */

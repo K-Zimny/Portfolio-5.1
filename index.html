@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/header-nav.css" />
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/works.css" />
 
     <!-- Custom Style Sheets -->
     <link rel="stylesheet" href="css/general.css" />
@@ -74,10 +76,16 @@
       </div>
     </header>
 
-    <section>
+    <section id="pageTitleSection">
+      <div class="container">
+        <h1 class="page__title">Frontend Developer</h1>
+      </div>
+    </section>
+
+    <section id="HeroSection">
       <div id="jsHero" class="hero">
         <div class="container container-hero">
-          <h1 id="jsHeroHeader" class="hero__header">Skills</h1>
+          <h2 id="jsHeroHeader" class="hero__header">Skills</h2>
 
           <div class="hero__hero-display">
             <div id="jsHeroItem1" class="hero__hero-display__item">
@@ -160,23 +168,80 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <h2>Works</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id
-          suscipit eros. Phasellus faucibus tellus vitae imperdiet sodales.
-          Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Pellentesque blandit ligula et commodo efficitur. Integer et velit
-          eleifend, aliquam tortor non, finibus tortor. Maecenas aliquet odio
-          sed neque imperdiet interdum. Nunc risus ligula, auctor sit amet porta
-          et, laoreet ac nulla. Donec maximus ipsum vitae purus tincidunt
-          laoreet. Pellentesque habitant morbi tristique senectus et netus et
-          malesuada fames ac turpis egestas. Morbi ac posuere tellus. Etiam nec
-          eros semper, luctus metus eget, pretium eros. Duis pretium, erat eu
-          porta fermentum, elit orci efficitur elit, vel eleifend lectus ante a
-          lacus. Aenean eget finibus nisl.
-        </p>
+    <section id="portfolioWorksSection">
+      <div class="work">
+        <div class="container">
+          <h2 class="work__section-title">Works</h2>
+
+          <div class="work__work-item">
+            <div class="work__work-item__img">
+              <a href="#">
+                <img src="img/works/works-mo.jpg" alt="MealOutpost." />
+              </a>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+            </div>
+            <div>
+              <h3 class="work__work-item__title">Meal Outpost</h3>
+              <p class="work__work-item__text">
+                Lorem ipsum dolor sit amet, consectetur adipisci ng elit. Etiam
+                impe rdiet blandit justo, in consequat nulla fermentum ac.
+                Mauris efficitur dignissi m cursus. massa. Phasellus facilisis
+                gra
+              </p>
+              <a href="#" class="work__work-item__link">View Site</a>
+            </div>
+          </div>
+
+          <div class="work__work-item">
+            <div class="work__work-item__img">
+              <a href="#">
+                <img
+                  src="img/works/works-tractatus.jpg"
+                  alt="Tractatus Design Studio."
+                />;
+              </a>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+            </div>
+            <div>
+              <h3 class="work__work-item__title">Tractatus Design Studio</h3>
+              <p class="work__work-item__text">
+                Lorem ipsum dolor sit amet, consectetur adipisci ng elit. Etiam
+                impe rdiet blandit justo, in consequat nulla fermentum ac.
+                Mauris efficitur dignissi m cursus. massa. Phasellus facilisis
+                gra
+              </p>
+              <a href="#" class="work__work-item__link">View Site</a>
+            </div>
+          </div>
+
+          <div class="work__work-item">
+            <div class="work__work-item__img">
+              <a href="#">
+                <img src="img/works/works-lobo.jpg" alt="Pizza Lobo." />;
+              </a>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+              <div class="work__work-item__decoration"></div>
+            </div>
+            <div>
+              <h3 class="work__work-item__title">Pizza Lobo</h3>
+              <p class="work__work-item__text">
+                Lorem ipsum dolor sit amet, consectetur adipisci ng elit. Etiam
+                impe rdiet blandit justo, in consequat nulla fermentum ac.
+                Mauris efficitur dignissi m cursus. massa. Phasellus facilisis
+                gra
+              </p>
+              <a href="#" class="work__work-item__link">View Site</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

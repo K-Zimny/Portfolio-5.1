@@ -1,7 +1,7 @@
 // hero display code.
 
 .hero {
-  // background: url("/img/textures/use-your-illusion.png");
+  transform: translateY(150px);
 }
 
 // ---------------------------------------------------------------
@@ -51,6 +51,7 @@
   transform: skewX(-10deg);
   transition: all ease 0.3s;
   min-width: 404px;
+  font-weight: bolder;
 }
 
 // ---------------------------------------------------------------
@@ -396,6 +397,7 @@
 
 .hero__hero-display__item-effect {
   background: linear-gradient(#565656, #171717);
+  background: linear-gradient(182deg, #565656, #171717);
   background-size: auto;
   min-height: 300px;
   position: relative;
@@ -431,7 +433,7 @@
   width: 18px;
   background: linear-gradient(#000000, #1f1f1f);
   transform: translate(438px, -354px) skew(2deg, 280deg);
-  z-index: -1;
+  z-index: 0;
   border-bottom-left-radius: 25px;
 }
 
@@ -505,18 +507,24 @@
 }
 
 // ---------------------------------------------------------------
-// h1 transform styles
+// hero__header for skills
 // ---------------------------------------------------------------
 
-h1 {
+.hero__header {
+  font-size: 2.5rem;
   text-align: center;
+  text-transform: uppercase;
+
   border: 3px solid var(--gray-1);
+
   transform: skewX(-10deg) translateX(15px);
+
   width: 1400px;
   margin-left: auto;
   margin-right: auto;
+
   background: url("../img/textures/subtle-dots.png");
-  text-transform: uppercase;
+
   cursor: default;
 }
 
@@ -529,7 +537,7 @@ h1 {
   width: 100%;
   background: linear-gradient(#222222 5%, #424242 22%, #222222);
   position: absolute;
-  top: 569px;
+  top: 300px;
   z-index: -1;
 }
 
@@ -545,12 +553,12 @@ h1 {
   width: 100%;
   background: linear-gradient(#494949 5%, #424242 30%, #252525);
   position: absolute;
-  top: 1330px;
+  top: 598px;
 }
 
 .hero__hero-display__base-effect__bottom::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../img/textures/black-orchid.png");
+  background: url("../img/textures/3px-tile.png");
 }

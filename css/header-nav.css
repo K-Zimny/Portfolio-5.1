@@ -6,6 +6,18 @@
 .site-header__logo-nav {
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
+}
+
+.site-header__logo-nav::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 6px;
+  left: 50%;
+  background: var(--gray-1);
+  width: 73vw;
+  transform: translateX(-50%);
 }
 
 .site-header__logo {
@@ -16,16 +28,6 @@
 .site-header__logo img {
   width: 100%;
   height: 100%;
-}
-
-.site-header__logo::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background: var(--gray-1);
-  width: 80vw;
 }
 
 .site-header__nav {
